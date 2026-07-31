@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio and biography website">
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="logo" href="#home">Y<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero container" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">HELLO, I'M</p>
+    <h1>Your <span>Name</span></h1>
+    <p class="hero-role">Developer · Gamer · Creator</p>
+    <p class="hero-text">Write a short introduction about yourself here. Tell visitors who you are, what you enjoy, and what you are building.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn secondary" href="#contact">Contact me</a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="#" target="_blank" rel="noreferrer">Discord</a>
+      <a href="#" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-frame">
+      <img src="assets/profile.jpg" alt="Profile photo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+      <div class="photo-placeholder">YOUR<br>PHOTO</div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="about">
+  <p class="eyebrow">01 — ABOUT</p><h2>Who I am</h2>
+  <div class="about-grid">
+    <p>Write your biography here. Talk about your background, interests, goals, and the things you are currently learning.</p>
+    <div class="stats">
+      <div><strong>16</strong><span>Years old</span></div>
+      <div><strong>∞</strong><span>Ideas</span></div>
+      <div><strong>24/7</strong><span>Learning</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="skills">
+  <p class="eyebrow">02 — SKILLS</p><h2>What I do</h2>
+  <div class="cards">
+    <article class="card"><div class="card-icon">⌘</div><h3>Development</h3><p>Web development, programming, and experimenting with new technologies.</p></article>
+    <article class="card"><div class="card-icon">◈</div><h3>Creative</h3><p>Designing interfaces, visuals, and digital experiences with attention to detail.</p></article>
+    <article class="card"><div class="card-icon">◉</div><h3>Gaming</h3><p>Gaming, content creation, and exploring game development.</p></article>
+  </div>
+</section>
+
+<section class="section container" id="projects">
+  <p class="eyebrow">03 — PROJECTS</p><h2>Things I've built</h2>
+  <div class="projects">
+    <article class="project">
+      <div class="project-image"><img src="assets/project-1.jpg" alt="Project 1"></div>
+      <div class="project-body"><span>PROJECT 01</span><h3>Project Name</h3><p>Describe what you built, why you built it, and which technologies you used.</p><a href="#">View project →</a></div>
+    </article>
+    <article class="project">
+      <div class="project-image"><img src="assets/project-2.jpg" alt="Project 2"></div>
+      <div class="project-body"><span>PROJECT 02</span><h3>Project Name</h3><p>Add another project and link it to its live demo or GitHub repository.</p><a href="#">View project →</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="section container" id="gallery">
+  <p class="eyebrow">04 — GALLERY</p><h2>My gallery</h2>
+  <div class="gallery">
+    <img src="assets/gallery-1.jpg" alt="Gallery image 1">
+    <img src="assets/gallery-2.jpg" alt="Gallery image 2">
+    <img src="assets/gallery-3.jpg" alt="Gallery image 3">
+    <img src="assets/gallery-4.jpg" alt="Gallery image 4">
+  </div>
+  <p class="edit-note">Put your own images in the <code>assets</code> folder and keep the filenames above, or change the filenames in <code>index.html</code>.</p>
+</section>
+
+<section class="section container" id="contact">
+  <div class="contact-box">
+    <p class="eyebrow">05 — CONTACT</p><h2>Let's connect.</h2>
+    <p>Replace the email and social links with your own.</p>
+    <a class="btn primary" href="mailto:your@email.com">Send me an email</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><span>© 2026 Your Name</span><a href="#home">Back to top ↑</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
